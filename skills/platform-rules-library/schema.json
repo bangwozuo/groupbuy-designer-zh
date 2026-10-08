@@ -1,0 +1,62 @@
+{
+  "skill_id": "de_local_04_sk04",
+  "name": "平台规则库",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": [
+      "query",
+      "knowledge"
+    ],
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "查询问题：用户的问题或检索意图"
+      },
+      "knowledge": {
+        "type": "string",
+        "description": "知识范围：可检索的知识内容（粘贴的材料或已挂载的知识库）"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": [
+      "answer",
+      "citations",
+      "gaps"
+    ],
+    "properties": {
+      "answer": {
+        "type": "string",
+        "description": "基于知识范围的回答"
+      },
+      "citations": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "每条结论对应的知识条目"
+      },
+      "gaps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "知识范围中未覆盖、需补充的内容"
+      }
+    },
+    "x-rendered-from": "capability:retrieve"
+  },
+  "constraints": {
+    "max_input_length": 5000,
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
+    "ai_label_required": true,
+    "human_review_required": true,
+    "external_api_required": false
+  }
+}

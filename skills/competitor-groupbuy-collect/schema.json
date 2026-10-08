@@ -1,0 +1,70 @@
+{
+  "skill_id": "de_local_04_sk01",
+  "name": "竞品团购采集",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": [
+      "source"
+    ],
+    "properties": {
+      "source": {
+        "type": "string",
+        "description": "数据来源：平台名 / subreddit / 关键词 / 账号或链接清单"
+      },
+      "scope": {
+        "type": "string",
+        "description": "采集范围：时间窗口、条数上限、筛选条件（可选）"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": [
+      "items",
+      "summary"
+    ],
+    "properties": {
+      "items": {
+        "type": "array",
+        "description": "逐条列出采集到的条目",
+        "items": {
+          "type": "object",
+          "properties": {
+            "#": {
+              "type": "string"
+            },
+            "标题/摘要": {
+              "type": "string"
+            },
+            "来源": {
+              "type": "string"
+            },
+            "时间": {
+              "type": "string"
+            },
+            "关键信息": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "summary": {
+        "type": "string",
+        "description": "用 2-3 句话概括这批数据的整体特征"
+      }
+    },
+    "x-rendered-from": "capability:collect"
+  },
+  "constraints": {
+    "max_input_length": 5000,
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
+    "ai_label_required": true,
+    "human_review_required": true,
+    "external_api_required": false
+  }
+}

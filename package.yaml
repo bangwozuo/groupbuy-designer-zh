@@ -1,0 +1,46 @@
+name: 团购设计师
+repo: bangwozuo/groupbuy-designer-zh
+legacy_name: 团购引流设计师
+version: 0.2.0
+asset_type: prompt-only
+stage: P1
+complexity: M
+group: 本地生活商家
+runtime_dependencies: none
+api_key_required: false
+demand_ids:
+  - D05
+  - D12
+  - D13
+
+workflows:
+  - name: 竞品团购追踪
+    id: de_local_04_wf01
+  - name: 套餐结构设计
+    id: de_local_04_wf02
+  - name: 扣点毛利测算
+    id: de_local_04_wf03
+  - name: 团购标题与图片文案
+    id: de_local_04_wf04
+  - name: 核销数据复盘调价
+    id: de_local_04_wf05
+
+skills:
+  - id: competitor-groupbuy-collect
+    name: 竞品团购采集
+    family: 
+  - id: groupbuy-pricing-calculate
+    name: 团购定价测算
+    family: 
+  - id: groupbuy-copy-generate
+    name: 团购文案生成
+    family: 
+  - id: platform-rules-library
+    name: 平台规则库
+    family: 
+
+compliance:
+  ai_label_required: true
+  human_review_required: true
+  forbidden_words_check: true
+  official_api_only: true
