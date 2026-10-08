@@ -1,0 +1,53 @@
+{
+  "params": {
+    "price": 89.0,
+    "food": 32.0,
+    "pack": 2.5,
+    "fixed": 8.0,
+    "labor": 12.0,
+    "platform_rate": 2.5,
+    "commission_rate": 6.0
+  },
+  "base": {
+    "price": 89.0,
+    "deduct": 2.2,
+    "commission": 5.3,
+    "gross": 47.0,
+    "gm_rate": 52.8,
+    "op": 27.0,
+    "op_rate": 30.3
+  },
+  "rules": "",
+  "sensitivity": [
+    {
+      "情景": "基准",
+      "price": 89.0,
+      "deduct": 2.2,
+      "commission": 5.3,
+      "gross": 47.0,
+      "gm_rate": 52.8,
+      "op": 27.0,
+      "op_rate": 30.3
+    },
+    {
+      "情景": "佣金率 +2 个百分点",
+      "price": 89.0,
+      "deduct": 2.2,
+      "commission": 7.1,
+      "gross": 45.2,
+      "gm_rate": 50.8,
+      "op": 25.2,
+      "op_rate": 28.3
+    },
+    {
+      "情景": "到手价直降 10 元",
+      "price": 79.0,
+      "deduct": 2.0,
+      "commission": 4.7,
+      "gross": 37.8,
+      "gm_rate": 47.8,
+      "op": 17.8,
+      "op_rate": 22.5
+    }
+  ]
+}
