@@ -110,22 +110,22 @@ groupbuy-designer-zh/
 
 ## 技能清单（4 个）
 
-| # | 技能 | 能力族 | 复杂度 | 提示词 | 文档 |
-|---|------|--------|--------|--------|------|
-| 1 | 竞品团购采集 | 数据采集 | `M` | [prompt.txt](skills/competitor-groupbuy-collect/prompt.txt) | [docs](skills/competitor-groupbuy-collect/docs/) |
-| 2 | 团购定价测算 | 测算与评估 | `S` | [prompt.txt](skills/groupbuy-pricing-calculate/prompt.txt) | [docs](skills/groupbuy-pricing-calculate/docs/) |
-| 3 | 团购文案生成 | 文案撰写 | `S` | [prompt.txt](skills/groupbuy-copy-generate/prompt.txt) | [docs](skills/groupbuy-copy-generate/docs/) |
-| 4 | 平台规则库 | 知识检索与问答 | `S` | [prompt.txt](skills/platform-rules-library/prompt.txt) | [docs](skills/platform-rules-library/docs/) |
+| # | 技能 | 能力族 | 复杂度 | 说明文档 |
+|---|------|--------|--------|----------|
+| 1 | 竞品团购采集 | 数据采集 | `M` | [README](skills/competitor-groupbuy-collect/README.md) |
+| 2 | 团购定价测算 | 测算与评估 | `S` | [README](skills/groupbuy-pricing-calculate/README.md) |
+| 3 | 团购文案生成 | 文案撰写 | `S` | [README](skills/groupbuy-copy-generate/README.md) |
+| 4 | 平台规则库 | 知识检索与问答 | `S` | [README](skills/platform-rules-library/README.md) |
 
 ## 工作流清单（5 条）
 
-| # | 工作流 | 阶段 | 复杂度 | 触发 | 定义 | 文档 |
-|---|--------|------|--------|------|------|------|
-| 1 | 竞品团购追踪 | `P1` | `M` | 定时（每周） | [SKILL.md](workflows/competitor-groupbuy-track-flow/SKILL.md) | [docs](workflows/competitor-groupbuy-track-flow/docs/) |
-| 2 | 套餐结构设计 | `P1` | `S` | 人工（发起策划） | [SKILL.md](workflows/package-structure-design-flow/SKILL.md) | [docs](workflows/package-structure-design-flow/docs/) |
-| 3 | 扣点毛利测算 | `P1` | `S` | 随 W2 联动 | [SKILL.md](workflows/commission-margin-calc-flow/SKILL.md) | [docs](workflows/commission-margin-calc-flow/docs/) |
-| 4 | 团购标题与图片文案 | `P1` | `S` | 随 W2 联动 | [SKILL.md](workflows/groupbuy-title-image-copy-flow/SKILL.md) | [docs](workflows/groupbuy-title-image-copy-flow/docs/) |
-| 5 | 核销数据复盘调价 | `P2` | `M` | 定时（每月） | [SKILL.md](workflows/verification-recap-reprice-flow/SKILL.md) | [docs](workflows/verification-recap-reprice-flow/docs/) |
+| # | 工作流 | 阶段 | 复杂度 | 触发 | 说明文档 |
+|---|--------|------|--------|------|----------|
+| 1 | 竞品团购追踪 | `P1` | `M` | 定时（每周） | [README](workflows/competitor-groupbuy-track-flow/README.md) |
+| 2 | 套餐结构设计 | `P1` | `S` | 人工（发起策划） | [README](workflows/package-structure-design-flow/README.md) |
+| 3 | 扣点毛利测算 | `P1` | `S` | 随 W2 联动 | [README](workflows/commission-margin-calc-flow/README.md) |
+| 4 | 团购标题与图片文案 | `P1` | `S` | 随 W2 联动 | [README](workflows/groupbuy-title-image-copy-flow/README.md) |
+| 5 | 核销数据复盘调价 | `P2` | `M` | 定时（每月） | [README](workflows/verification-recap-reprice-flow/README.md) |
 
 ---
 
