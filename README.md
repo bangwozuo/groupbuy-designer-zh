@@ -4,8 +4,7 @@
 
 ![团购设计师 · 动态演示](docs/assets/hero.gif)
 
-*▲ 实时演示（自动循环）· [▶ 观看完整版合集视频](docs/demo.mp4)*
-
+*▲ 真实执行录播（自动循环播放）· [▶ 观看完整版合集视频](docs/demo.mp4)*
 
 [![Stage](https://img.shields.io/badge/stage-P1-orange)](https://github.com/bangwozuo)
 [![Asset](https://img.shields.io/badge/asset-prompt--only-blueviolet)](#资产形态)
@@ -114,9 +113,9 @@ groupbuy-designer-zh/
 | # | 技能 | 能力族 | 复杂度 | 提示词 | 文档 |
 |---|------|--------|--------|--------|------|
 | 1 | 竞品团购采集 | 数据采集 | `M` | [prompt.txt](skills/competitor-groupbuy-collect/prompt.txt) | [docs](skills/competitor-groupbuy-collect/docs/) |
-| 2 | 团购定价测算 | 测算评估 | `S` | [prompt.txt](skills/groupbuy-pricing-calculate/prompt.txt) | [docs](skills/groupbuy-pricing-calculate/docs/) |
-| 3 | 团购文案生成 | 文案生成 | `S` | [prompt.txt](skills/groupbuy-copy-generate/prompt.txt) | [docs](skills/groupbuy-copy-generate/docs/) |
-| 4 | 平台规则库 | 知识检索 | `S` | [prompt.txt](skills/platform-rules-library/prompt.txt) | [docs](skills/platform-rules-library/docs/) |
+| 2 | 团购定价测算 | 测算与评估 | `S` | [prompt.txt](skills/groupbuy-pricing-calculate/prompt.txt) | [docs](skills/groupbuy-pricing-calculate/docs/) |
+| 3 | 团购文案生成 | 文案撰写 | `S` | [prompt.txt](skills/groupbuy-copy-generate/prompt.txt) | [docs](skills/groupbuy-copy-generate/docs/) |
+| 4 | 平台规则库 | 知识检索与问答 | `S` | [prompt.txt](skills/platform-rules-library/prompt.txt) | [docs](skills/platform-rules-library/docs/) |
 
 ## 工作流清单（5 条）
 
